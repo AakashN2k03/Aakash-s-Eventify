@@ -12,12 +12,13 @@ const multer=require('multer')
 require("dotenv").config();
 
 const app=express()
-app.use(express.json())
 app.use(cors({
     origin: 'https://aakash-s-eventifyfrontend.onrender.com', // Allow requests from this origin
     methods: ['GET', 'POST'], // Specify allowed methods
     credentials: true // Optional: if you need to send cookies or HTTP Auth info
 }));
+app.use(express.json())
+
 
 app.use(bodyParser.json());
 app.use('/imguploads', express.static('imguploads'));
