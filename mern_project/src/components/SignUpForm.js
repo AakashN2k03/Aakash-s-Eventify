@@ -13,7 +13,7 @@ function SignUpForm() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:3000/registration', { name, email, password });
+            const response = await axios.post('https://aakash-s-eventify-backend.onrender.com/registration', { name, email, password });
             console.log(response);
             navigate('/home');
         } catch (err) {
