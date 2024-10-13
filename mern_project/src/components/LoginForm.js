@@ -13,7 +13,7 @@ function LoginForm() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:3000/login', { email, password });
+            const response = await axios.post('https://aakash-s-eventify-backend.onrender.com/login', { email, password });
             console.log(response);
             if (response.data === "success") {
                 
