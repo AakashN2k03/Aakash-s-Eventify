@@ -8,7 +8,7 @@ const ReviewBox = () => {
   // Function to fetch existing feedbacks from backend
   const fetchFeedback = async () => {
     try {
-      const response = await axios.get(https://aakash-s-eventify.onrender.com/feedback');
+      const response = await axios.get('https://aakash-s-eventify.onrender.com/feedback');
       setFeedbackList(response.data);
     } catch (error) {
       console.error('Error fetching feedback:', error);
