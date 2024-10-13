@@ -8,7 +8,7 @@ const ReviewBox = () => {
   // Function to fetch existing feedbacks from backend
   const fetchFeedback = async () => {
     try {
-      const response = await axios.get('http://localhost:3000/feedback');
+      const response = await axios.get('https://aakash-s-eventify-backend.onrender.com/feedback');
       setFeedbackList(response.data);
     } catch (error) {
       console.error('Error fetching feedback:', error);
@@ -23,7 +23,7 @@ const ReviewBox = () => {
   // Function to handle submitting new feedback
   const handleSubmit = async () => {
     try {
-      const response = await axios.post('http://localhost:3000/feedback', { message: newFeedback });
+      const response = await axios.post('https://aakash-s-eventify-backend.onrender.com/feedback', { message: newFeedback });
       console.log('Feedback saved:', response.data);
       setNewFeedback(''); // Clear input field after submission
       fetchFeedback(); // Refresh feedback list after submission
