@@ -16,7 +16,7 @@ function App() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('https://aakash-s-eventify-backend.onrender.com/send-email', {firstname,surname,email,sub,msg});
+      await axios.post('https://aakash-s-eventify.onrender.com/send-email', {firstname,surname,email,sub,msg});
       console.log('Email sent successfully');
       setIsEmailSent(true);
       setfirstname('');
