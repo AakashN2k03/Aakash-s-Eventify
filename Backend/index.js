@@ -163,7 +163,7 @@ app.get('/images', async (req, res) => {
     const images = await ImageModel.find();
     const imagesWithUrls = images.map(image => ({
       name: image.name,
-      imageUrl: `http://localhost:3000/imguploads/${image.image.data}`
+      imageUrl: `https://aakash-s-eventifyfrontend.onrender.com/imguploads/${image.image.data}`
     }));
     res.json(imagesWithUrls);
   } catch (err) {
@@ -214,7 +214,7 @@ app.get('/gallery', async (req, res) => {
     const images = await GalleryModel.find();
     const imagesWithUrls = images.map(image => ({
       name: image.name,
-      imageUrl: `http://localhost:3000/galleryuploads/${image.image.data}`
+      imageUrl: `https://aakash-s-eventifyfrontend.onrender.com/galleryuploads/${image.image.data}`
     }));
     res.json(imagesWithUrls);
   } catch (err) {
