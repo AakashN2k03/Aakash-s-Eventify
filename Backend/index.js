@@ -13,7 +13,13 @@ require("dotenv").config();
 
 const app=express()
 app.use(express.json())
-app.use(cors());
+const allowedOrigins = ['https://aakash-s-eventifyfrontend.onrender.com'];
+
+app.use(cors({
+  origin: allowedOrigins,
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  credentials: true, // If you need to send cookies or authorization headers
+}));
 app.use(bodyParser.json());
 app.use('/imguploads', express.static('imguploads'));
 app.use('/galleryuploads', express.static('galleryuploads'));
