@@ -14,7 +14,7 @@ const SwiperCoverflow = () => {
   useEffect(() => {
     const fetchImages = async () => {
       try {
-        const response = await fetch('http://localhost:3000/images');
+        const response = await fetch('https://aakash-s-eventify-backend.onrender.com/images');
         const data = await response.json();
         setImages(data);
       } catch (error) {
