@@ -8,7 +8,7 @@ const Gallery = () => {
 
   useEffect(() => {
     // Fetch images from your backend
-    fetch("https://aakash-s-eventify-backend.onrender.com/gallery")
+    fetch("https://aakash-s-eventify.onrender.com/gallery")
       .then((response) => response.json())
       .then((data) => setImages(data))
       .catch((error) => console.error("Error fetching images:", error));
