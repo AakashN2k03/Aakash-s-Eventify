@@ -16,7 +16,7 @@ const ThreeBoxes = () => {
   const handlePayment = async (amount) => {
     try {
       // Create order on backend
-      const response = await fetch('http://localhost:3000/create-order', {
+      const response = await fetch('https://aakash-s-eventify-backend.onrender.com/create-order', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -44,7 +44,7 @@ const ThreeBoxes = () => {
           alert(response.razorpay_signature);
 
           // Verify payment on backend
-          fetch('http://localhost:3000/verify-payment', {
+          fetch('https://aakash-s-eventify-backend.onrender.com/verify-payment', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
