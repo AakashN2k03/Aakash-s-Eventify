@@ -38,7 +38,7 @@ Follow these instructions to get a copy of the project up and running on your lo
 
 ### Installation
 
-Clone the repository: git clone https://github.com/yourusername/aakash-eventify.git
+Clone the repository: git clone https://github.com/AakashN2k03/Aakash-s-Eventify.git
 
 ### Usage
 
