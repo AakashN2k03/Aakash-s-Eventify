@@ -66,15 +66,15 @@ app.post('/send-email', async (req, res) => {
     const transporter = nodemailer.createTransport({
       service: 'Gmail',
       auth: {
-        user: 'aakofficial007@gmail.com', // Enter your Gmail address here
-        pass: 'ntkr wcaz sqoo cdwx' // Enter your Gmail password here or use an app-specific password
+        user:  // Enter your Gmail address here
+        pass: // Enter your Gmail password here or use an app-specific password
       }
     });
 
     // Configure mail options
     const mailOptions = {
       from:email,
-      to: 'aakofficial007@gmail.com', // Send the email to the provided email address
+      to:  // Send the email to the provided email address
       subject: sub,
       text: `Name: ${firstname} \n\nLastName: ${surname}\n\nMessage: ${msg}\n\n${email}`
     };
